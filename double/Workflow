@@ -8,7 +8,7 @@ python pdb_contact_complex.py
 	# empty line separates contacts of pep1 from pep2
 
 python change_coor.py
-  # puts the protein com at origin, translates peptides 4 nm away 
+  	# puts the protein com at origin, translates peptides 4 nm away 
 
 python setup_MELD.py
 
