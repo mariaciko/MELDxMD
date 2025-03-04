@@ -10,4 +10,6 @@ This project focuses on predicting the binding poses for P53-derived ligands to 
 
 For (i), we follow the study of Morrone, J. A., Perez, A., MacCallum, J. & Dill, K. A. Computed Binding of Peptides to Proteins with MELD-Accelerated Molecular Dynamics. J. Chem. Theory Comput. 13, 870–876 (2017). This repository contains the preparatory files for the native structure 1YCR (MDM2-P53) and the reference peptide (P6W) for method (i) and (ii), in [single](https://github.com/mariaciko/Thesis/tree/main/single) and [double](https://github.com/mariaciko/Thesis/tree/main/double), respectively.  
 
-MELD relies on Bayesian statistics to narrow its conformational search to only desired states (i.e. low-energy conformations). It implements "smart springs" or restraints that are not active indefinitely. Bayes' Theorem states that
+
+### MELD protocol
+MELD relies on Bayesian statistics to narrow its conformational search to only desired states (i.e. low-energy conformations). It implements "smart springs" or restraints that are not active indefinitely.
