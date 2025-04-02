@@ -1,4 +1,3 @@
-# Thesis
 ## MELDxMD protein-peptide binding
 
 We want to predict binding modes using MELD-accelerated Molecular Dynamics, where MELD stands for Modeling Employing Limited Data. This approach accelerates conventional MD methods by integrating external information in a Bayesian framework. A common issue with physics-based approaches like MD are the kinetic traps conformations fall into in the potential energy surface, resulting in a process that is slow and computationally expensive. 
