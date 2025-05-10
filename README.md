@@ -13,12 +13,16 @@ Prior to running the simulations on MELD, we test for convergence running a sing
 
 ### MELD protocol
 MELD relies on Bayesian statistics to narrow its conformational search to only desired states. It implements "smart springs" or restraints that are not all active at the same time though various scalers (e.g. protein cartesian restraints, protein-peptide binding, containment restraints, etc).  The idea behind "smart" springs is that they rely on a flat bottom potential and Bayesian statistics.
+
 1. Flat bottom potential
+
 Take a quadratic spring. Cut it in half. Distance the halves and bring them down to the horizontal axis. Now, you have a flat bottom region which represents the zero-potential. This means that points falling in this flat region will behave as though they are at equilibrium. Equilibrium matters because that's where you compute thermodynamic properties from. If we were to work with the original quadratic spring, equilibrium only occurs at one point: the minimum of the curve. 
 
 2. Bayesian statistics
+
 Bayes' Theorem states that the springs which are active are the least violated ones (i.e. low-energy conformations).
 <img width="380" alt="image" src="https://github.com/user-attachments/assets/8790cd18-7729-4617-a729-69cc38318a11" />
+
 In MELD, the probability of sampling a configuration given a set of springs is defined as the probability of sampling a configuration in MD (prior) multiplied by the probability of having a spring active (likelihood).
 <img width="335" alt="Screenshot 2025-05-10 at 12 18 25" src="https://github.com/user-attachments/assets/875ba9d0-0ba8-43f5-b683-acb1cdf5dd11" />
 
