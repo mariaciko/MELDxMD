@@ -21,9 +21,11 @@ Take a quadratic spring. Cut it in half. Distance the halves and bring them down
 2. Bayesian statistics
 
 Bayes' Theorem states that the springs which are active are the least violated ones (i.e. low-energy conformations).
+
 <img width="380" alt="image" src="https://github.com/user-attachments/assets/8790cd18-7729-4617-a729-69cc38318a11" />
 
 In MELD, the probability of sampling a configuration given a set of springs is defined as the probability of sampling a configuration in MD (prior) multiplied by the probability of having a spring active (likelihood).
+
 <img width="335" alt="Screenshot 2025-05-10 at 12 18 25" src="https://github.com/user-attachments/assets/875ba9d0-0ba8-43f5-b683-acb1cdf5dd11" />
 
 
